@@ -5,305 +5,60 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="icon" href="assets/icon/favicon.webp">
-   <title>Dmitry Didenko</title>
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link
-      href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet">
+   <link rel="icon" href="assets/icon/favicon.png">
+   <title>Дон Арт</title>
    <link rel="stylesheet" href="css/normalize.css">
    <link rel="stylesheet" type="text/css" href="css/style.min.css">
 </head>
 
 <body>
    <header>
+      <div class="header__up">
+         <a class="header__up-logo" href="index.html"><img src="assets/icon/logo.png" alt="logo"></a>
+         <a class="header__up-map" href="#"><img src="assets/icon/contacts/map.png" alt="г.Азов, Кагальницкое шоссе 16">
+            г. Азов, Кагальницкое шоссе 16</a>
+         <a class="header__up-call" href="#"><img src="assets/icon/contacts/call.png" alt="телефон: +7(958)544-65-25">
+            +7(958)544-65-25</a>
+         <div class="header__up-social">
+            <a href="#"><img src="assets/icon/contacts/whatsapp.png" alt="whatsapp"></a>
+            <a href="#"><img src="assets/icon/contacts/telegram.png" alt="telegram"></a>
+            <a href="#"><img src="assets/icon/contacts/instagram.png" alt="instagram"></a>
+         </div>
+      </div>
       <div class="header__block">
-         <a class="header__block-logo" href="index.html"><img src="assets/icon/logo.webp" alt="logo"></a>
-         <button type="button" class="burger header__burger"></button>
-         <nav class="navigation__header">
-            <button type="button" class="close header__close"></button>
-            <ul class="header__block-lists navigation__menu">
-               <li class="header__block-link"><a class="header__block-list link" href="index.html">Главная</a></li>
-               <li class="header__block-taplink"><a class="header__block-list link" href="services.html">Услуги</a>
-                  <ul class="header__block-underlists">
-                     <li class="header__block-underlist"><a href="complex.html">Комплексный маркетинг</a></li>
-                     <li class="header__block-underlist"><a href="development.html">Создание сайтов</a></li>
-                     <li class="header__block-underlist"><a href="brand.html">Фирменный стиль</a></li>
-                     <li class="header__block-underlist"><a href="seo.html">SEO-продвижение</a></li>
-                     <li class="header__block-underlist"><a href="crm.html">Внедрение CRM</a></li>
-                     <li class="header__block-underlist"><a href="context.html">Контекстная реклама</a></li>
-                     <li class="header__block-underlist"><a href="target.html">Таргетированная реклама</a></li>
-                     <li class="header__block-underlist"><a href="analytics.html">Веб - аналитика</a></li>
-                     <li class="header__block-underlist"><a href="email.html">Email маркетинг</a></li>
-                  </ul>
-               </li>
-               <li><a class="header__block-list link" href="cases.html">Кейсы</a></li>
-               <li><a class="header__block-list link" href="faq.html">FAQ</a></li>
-               <li><a class="header__block-list link" href="contacts.html">Контакты</a></li>
-            </ul>
-         </nav>
-         <a href="#" class="header__block-button link-btn">Обсудить проект</a>
+         <div class="header__block-menu">
+            <button type="button" class="burger header__burger"></button>
+            <nav class="navigation__header">
+               <button type="button" class="close header__close"></button>
+               <ul class="header__block-lists navigation__menu">
+                  <li class="header__block-link"><a class="header__block-list link" href="index.html">Главная</a>
+                  </li>
+                  <li class="header__block-link"><a class="header__block-list link" href="#">О нас</a></li>
+                  <li class="header__block-taplink"><a class="header__block-list link" href="#">Предприятиям</a>
+                     <ul class="header__block-underlists">
+                        <li class="header__block-underlist"><a href="#">Молочное и масложировое производство</a></li>
+                        <li class="header__block-underlist"><a href="#">Птицеперерабатывающее производство,
+                              агрокомплексы</a></li>
+                        <li class="header__block-underlist"><a href="#">Мясоперерабатывающее производство</a></li>
+                        <li class="header__block-underlist"><a href="#">Пивобезалкогольное , виноводочное
+                              производство</a></li>
+                        <li class="header__block-underlist"><a href="#">Рыбоперерабатывающее производство</a></li>
+                        <li class="header__block-underlist"><a href="#">Хлебопекарное и кондитерское производство</a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li><a class="header__block-list link" href="#">Продукция</a></li>
+                  <li><a class="header__block-list link" href="#">Оснащение лабораторий</a></li>
+                  <li><a class="header__block-list link" href="#">Прайс-лист</a></li>
+                  <li><a class="header__block-list link" href="#">Контакты</a></li>
+               </ul>
+            </nav>
+            <a href="#" class="header__block-button link-btn">Перезвоните мне</a>
+         </div>
       </div>
    </header>
-   <section id="home__subheader">
-      <div class="home__subheader">
-         <!-- <img class="home__subheader-photo" src="assets/bg/dmitrii-bg.webp" alt="диденко дмитрий - интернет маркетолог"> -->
-         <img class="home__subheader-photo" src="assets/bg/photo.webp" alt="диденко дмитрий - интернет маркетолог">
-         <div class="home__subheader-content">
-            <h1>Дмитрий Диденко - <br> маркетолог с опытом более 8 лет!</h1>
-            <h3> &#34;Я помогаю бизнесу и людям выйти на <br> новый уровень взаимодействия с <br> помощью инструментов
-               маркетинга&#34;</h3>
-            <div class="home__subheader-btns">
-               <a href="#" class="home__subheader-button link-btn">Обсудить проект</a>
-               <a href="#" class="header__block-button link-btn">Заполнить бриф</a>
-            </div>
-         </div>
-      </div>
-   </section>
-   <div class="background-bokes">
-      <div class="home__services">
-         <h2>Что я умею</h2>
-         <div class="home__services-grid">
-            <a class="home__services-card"><img src="assets/icon/services/services-01.webp"
-                  alt="интернет маркетинг, интернет-маркетолог">
-               <div class="home__services-front">Комплексный маркетинг</div>
-               <ul class="home__services-back">
-                  <li>Анализ ниши</li>
-                  <li>Планирование бюджета</li>
-                  <li>Четкие рекомендации</li>
-                  <li class="more">Подробнее <span>&rsaquo;&rsaquo;</span></li>
-               </ul>
-            </a>
-            <a class="home__services-card"><img src="assets/icon/services/services-02.webp"
-                  alt="создание сайтов, интернет-маркетолог">
-               <div class="home__services-front">Создание сайтов</div>
-               <ul class="home__services-back">
-                  <li>Landing page</li>
-                  <li>Корпоративные сайты</li>
-                  <li>Сайт - витрина</li>
-                  <li>Интернет - магазины</li>
-                  <li class="more">Подробнее <span>&rsaquo;&rsaquo;</span></li>
-               </ul>
-            </a>
-            <a class="home__services-card"><img src="assets/icon/services/services-03.webp"
-                  alt="фирменный стиль, интернет-маркетолог">
-               <div class="home__services-front">Фирменный стиль</div>
-               <ul class="home__services-back">
-                  <li>Уникальные логотипы</li>
-                  <li>Визитки</li>
-                  <li>Баннеры</li>
-                  <li>Презентации</li>
-                  <li class="more">Подробнее <span>&rsaquo;&rsaquo;</span></li>
-               </ul>
-            </a>
-            <a class="home__services-card"><img src="assets/icon/services/services-04.webp"
-                  alt="seo продвижение, интернет-маркетолог">
-               <div class="home__services-front">SEO - продвижение</div>
-               <ul class="home__services-back">
-                  <li>ТОП Яндекс и Google</li>
-                  <li>Рост целевых клиентов и продаж</li>
-                  <li class="more">Подробнее <span>&rsaquo;&rsaquo;</span></li>
-               </ul>
-            </a>
-            <a class="home__services-card"><img src="assets/icon/services/services-05.webp"
-                  alt="внедрение crm, интернет-маркетолог">
-               <div class="home__services-front">Внедрение CRM</div>
-               <ul class="home__services-back">
-                  <li>Подбор и интеграция CRM</li>
-                  <li>Настройка и автоматизация бизнес процессов</li>
-                  <li class="more">Подробнее <span>&rsaquo;&rsaquo;</span></li>
-               </ul>
-            </a>
-            <a class="home__services-card"><img src="assets/icon/services/services-06.webp"
-                  alt="контекстная реклама, интернет-маркетолог">
-               <div class="home__services-front">Контекстная реклама</div>
-               <ul class="home__services-back">
-                  <li>Самый эффективный вид рекламы</li>
-                  <li>Объявления для горячих клиентов</li>
-                  <li class="more">Подробнее <span>&rsaquo;&rsaquo;</span></li>
-               </ul>
-            </a>
-            <a class="home__services-card"><img src="assets/icon/services/services-07.webp"
-                  alt="таргетированная реклама, интернет-маркетолог">
-               <div class="home__services-front">Таргетированная реклама</div>
-               <ul class="home__services-back">
-                  <li>Реклама в социальных сетях</li>
-                  <li>Вконтакте</li>
-                  <li>Одноклассники и т.д.</li>
-                  <li class="more">Подробнее <span>&rsaquo;&rsaquo;</span></li>
-               </ul>
-            </a>
-            <a class="home__services-card"><img src="assets/icon/services/services-08.webp"
-                  alt="веб аналитика, интернет-маркетолог">
-               <div class="home__services-front">Веб - аналитика</div>
-               <ul class="home__services-back">
-                  <li>Анализ поведения посетителей</li>
-                  <li>Оценка точек роста и источников трафика</li>
-                  <li class="more">Подробнее <span>&rsaquo;&rsaquo;</span></li>
-               </ul>
-            </a>
-            <a class="home__services-card"><img src="assets/icon/services/services-09.webp"
-                  alt="email маркетинг, интернет-маркетолог">
-               <div class="home__services-front">Email - маркетинг</div>
-               <ul class="home__services-back">
-                  <li>Продвижение через email-рассылки</li>
-                  <li class="more">Подробнее <span>&rsaquo;&rsaquo;</span></li>
-               </ul>
-            </a>
-         </div>
-      </div>
-      <div class="background">
-         <span></span>
-         <span></span>
-         <span></span>
-         <span></span>
-         <span></span>
-         <span></span>
-         <span></span>
-      </div>
-   </div>
-   <section>
-      <div class="home__about">
-         <h2>Обо мне</h2>
-         <h5>Здравствуйте, я интернет-маркетолог с опытом более 8 лет</h5>
-         <div class="home__about-grid">
-            <img class="about-img" src="assets/img/photo-about.webp" alt="Дмитрий Диденко - интернет маркетолог">
-            <div class="home__about-text">
-               <p class="about-text__up">Я предлагаю полный спектр интернет - маркетинговых услуг, которые помогут
-                  вашему
-                  бизнесу достичь
-                  новых
-                  высот. Стратегия, создание сайтов, продающие тексты, настройка рекламы, SEO-оптимизация - я
-                  обеспечу
-                  комплексное воздействие, чтобы вы могли максимально извлечь выгоду из каждого вложенного в рекламу
-                  рубля.</p>
-               <p class="about-text__down">Знаю, как правильно разложить риски и не полагаться только на один источник,
-                  чтобы ваш бизнес
-                  оставался надежным и успешным независимо от изменений в алгоритмах поисковых систем или рекламных
-                  платформах. Разработка оптимального рекламного микса - это мое приоритетное задание. Доверьте мне
-                  свой
-                  маркетинг, и я приведу ваш бизнес к новым горизонтам.</p>
-            </div>
-            <img class="about-rocket" src="assets/img/rocket.webp" alt="rocket">
-         </div>
 
-      </div>
-   </section>
-   <section class="partners">
-      <div class="home__partners">
-         <h2>Партнёры</h2>
-         <div class="home__partners-grid">
-            <div class="home__partners-up">
-               <div class="home__partners-card"><img src="assets/icon/partners/partners-01.webp" alt="Клиент ts-prime">
-               </div>
-               <div class="home__partners-card"><img src="assets/icon/partners/partners-02.webp" alt="Клиент Дон-Арт">
-               </div>
-               <div class="home__partners-card"><img src="assets/icon/partners/partners-03.webp" alt="Клиент Окейстрой">
-               </div>
-               <div class="home__partners-card"><img src="assets/icon/partners/partners-04.webp"
-                     alt="Клиент Вилки-палки"></div>
-               <div class="home__partners-card"><img src="assets/icon/partners/partners-05.webp" alt="Клиент SmartCom">
-               </div>
-               <div class="home__partners-card"><img src="assets/icon/partners/partners-06.webp"
-                     alt="Клиент сервис окон"></div>
-               <div class="home__partners-card"><img src="assets/icon/partners/partners-07.webp" alt="Клиент ToolsProf">
-               </div>
-               <div class="home__partners-card"><img src="assets/icon/partners/partners-08.webp"
-                     alt="Клиент Союз заводов"></div>
-            </div>
-            <div class="home__partners-down">
-               <div class="home__partners-card"><img src="assets/icon/partners/partners-09.webp" alt="Клиент СушиДо">
-               </div>
-               <div class="home__partners-card"><img src="assets/icon/partners/partners-10.webp"
-                     alt="Клиент BodyFlexer">
-               </div>
-               <div class="home__partners-card"><img src="assets/icon/partners/partners-11.webp" alt="Клиент Cofer">
-               </div>
-               <div class="home__partners-card"><img src="assets/icon/partners/partners-12.webp"
-                     alt="Клиент Мама маркет"></div>
-               <div class="home__partners-card"><img src="assets/icon/partners/partners-13.webp"
-                     alt="Клиент Nuhodu shop"></div>
-               <div class="home__partners-card"><img src="assets/icon/partners/partners-14.webp" alt="Клиент Akfix">
-               </div>
-               <div class="home__partners-card"><img src="assets/icon/partners/partners-15.webp"
-                     alt="Клиент Маркет Логистик"></div>
-               <div class="home__partners-card"><img src="assets/icon/partners/partners-16.webp" alt="Клиент Palto">
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
-   <section>
-      <div class="home__quiz">
-         <div class="home__quiz-grid">
-            <h4 class="home__quiz-title">Не знаете с чего начать?</h4>
-            <p>Пройдите квиз - это поможет мне лучше разобраться в <br> текущей ситуации и точнее понять вашу проблему
-            </p>
-            <a href="#" class="home__subheader-button link-btn">Начать квиз</a>
-         </div>
-         <div class="home__quiz-bg">
-            <div class="home__quiz-bg1"></div>
-            <div class="home__quiz-bg2"></div>
-         </div>
-      </div>
-   </section>
-   <section>
-      <div class="home__privilege">
-         <h2>Почему со мной работают долго?</h2>
-
-         <div class="home__privilege-grid">
-            <div class="home__privilege-card"><img src="assets/icon/privilege/privilege-01.svg" alt="">Работаю по
-               договору</div>
-            <div class="home__privilege-card"><img src="assets/icon/privilege/privilege-02.svg" alt="">Являюсь
-               универсальным специалистом</div>
-            <div class="home__privilege-card"><img src="assets/icon/privilege/privilege-03.svg" alt="">Результаты моей
-               работы и доступы принадлежат Вам</div>
-            <div class="home__privilege-card"><img src="assets/icon/privilege/privilege-04.svg" alt="">Всегда на связи в
-               рабочие дни с 9:00 до 18:00 часов</div>
-            <div class="home__privilege-card"><img src="assets/icon/privilege/privilege-05.svg" alt="">Предлагаю
-               разносторонние сервисы для улучшения результата</div>
-            <div class="home__privilege-card"><img src="assets/icon/privilege/privilege-06.svg" alt="">Не бросаю
-               клиентов после окончания проекта </div>
-            <div class="home__privilege-card"><img src="assets/icon/privilege/privilege-07.svg" alt="">Бесплатно делаю
-               аудит и маркетинговый план перед началом работ </div>
-            <div class="home__privilege-card"><img src="assets/icon/privilege/privilege-08.svg" alt="">Каждую неделю
-               отчитываюсь о проделанной работе </div>
-            <div class="home__privilege-card"><img src="assets/icon/privilege/privilege-09.svg" alt="">Постоянно
-               развиваюсь в сфере интернет - маркетинга</div>
-         </div>
-      </div>
-   </section>
-   <section>
-      <div class="contact__form">
-         <div class="contact__form-block">
-            <div class="contact__form-intitle">
-               <h6 class="contact__form-title">Давайте знакомиться</h6>
-               <p class="contact__form-subtitle">На 30-минутном созвоне в zoom обсудим ваш запрос. Определим,<br>
-                  подхожу ли я для решения именно вашей ситуации.</p>
-            </div>
-            <div class="contact__form-container">
-               <form action="action_page.php" enctype="multipart/form-data" method="post">
-
-                  <div class="contact__form-grid">
-                     <input type="text" id="contact-name" name="contactname" autocomplete="on" placeholder="Ваше имя">
-                     <label for="contact-name"></label>
-
-                     <input type="text" id="contact-tel" name="contacttel" autocomplete="on"
-                        placeholder="Контактный телефон">
-                     <label for="contact-tel"></label>
-                  </div>
-                  <textarea id="subject" name="subject" placeholder="Расскажите о проекте"></textarea>
-                  <label for="subject"></label>
-                  <input class="button__contact link-btn" id="button__contact" type="submit" value="Отправить"
-                     name="submitform">
-               </form>
-            </div>
-         </div>
-      </div>
-   </section>
-   <hr class="hr-footer">
-   <footer>
+   <!-- <footer>
       <div class="footer__block">
          <a href="#" id="toTop"><img src="assets/svg/up-arrow.svg" alt="toTop"></a>
          <div class="footer__block-row">
@@ -357,7 +112,7 @@
             <p>Разработка сайта: <a href="#" rel="nofollow" class="made"> WebPerspective</a></p>
          </noindex>
       </div>
-   </footer>
+   </footer> -->
    <script src="js/main.min.js"></script>
 </body>
 
