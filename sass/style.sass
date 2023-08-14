@@ -20,6 +20,7 @@ body
 	background-color: #fff
 	display: flex
 	justify-content: center
+	flex-direction: column
 	width: 100vw
 	font-family: Montserrat
 	font-size: 16px
@@ -28,6 +29,42 @@ body
 		font-size: 15px
 	@media (max-width: 1040px)
 		font-size: 14px
+	@media (max-width: 490px)
+		font-size: 13px
+section
+	display: flex
+	justify-content: center
+	flex-direction: column
+	align-items: center
+	width: 100vw
+	overflow-x: hidden
+	margin-bottom: 170px
+h1
+	font-size: 38px
+	font-weight: 600
+	@media (max-width: 1240px)
+		font-size: 32px
+	@media (max-width: 1040px)
+		font-size: 22px
+	@media (max-width: 744px)
+		font-size: 18px
+h2
+	font-size: 28px	
+	font-weight: 500
+	max-width: 680px
+	span
+		color: $deepblue
+h3
+	font-size: 18px
+	font-style: normal
+	font-weight: 500
+	line-height: normal
+	@media (max-width: 1240px)
+		font-size: 16px
+	@media (max-width: 1040px)
+		font-size: 14px
+	@media (max-width: 744px)
+		font-size: 12px
 input
 	margin: 0
 	padding: 0
@@ -48,13 +85,15 @@ header
 .link-btn
 	padding: 12px 20px
 	border-radius: 50px
-	border: 2px solid $white
 	font-size: 15px
 	@media (max-width: 1240px)
 		font-size: 14px
 		padding: 12px 16px
+	@media (max-width: 490px)
+		padding: 10px 14px
+		font-size: 12px
 .link-btn:hover
-	transform: scale(0.98)
+	transform: scale(1.05)
 	transition-duration: 0.1s
 .header__up
 	width: 1440px
@@ -72,8 +111,6 @@ header
 		height: 80px
 	@media (max-width: 490px)
 		padding: 0 20px
-	@media (max-width: 320px)
-		padding: 0 10px
 	a
 		color: $deepblue
 		display: flex
@@ -81,11 +118,13 @@ header
 		font-weight: 600
 		img
 			padding-right: 10px
+			@media (max-width: 490px)
+				padding-right: 6px
 	&-logo
 		margin-top: -10px
 		img
 			@media (max-width: 490px)
-				height: 48px
+				height: 40px
 		&-logo:hover
 		transform: scale(1.02)
 		transition-duration: 0.1s
@@ -93,13 +132,15 @@ header
 		width: 170px
 		display: flex
 		justify-content: space-between
+		@media (max-width: 490px)
+			width: 100px
 		a:hover
 			transform: scale(1.1)
 			transition-duration: 0.2s
 		a
 			img
 				@media (max-width: 490px)
-					height: 36px
+					height: 32px
 	&-map
 		@media (max-width: 1040px)
 			display: none!important
@@ -114,6 +155,9 @@ header
 	align-items: center
 	justify-content: center
 	background: $deepblue
+	@media (max-width: 490px)
+		height: 60px
+		padding: 0 20px
 	&-lists
 		display: flex
 		justify-content: space-between
@@ -122,10 +166,19 @@ header
 			width: 70vw
 		@media (max-width: 1240px)
 			width: 75vw
+		@media (max-width: 1040px)
+			margin-left: 40px
+			flex-direction: column
+			gap: 2vw
+		@media (max-width: 490px)
+			margin-left: 20
+		
 		li
 			a
 				color: $white
 				font-weight: 400
+				@media (max-width: 1040px)
+					font-size: 16px
 		li:hover
 			transform: scale(1.05)
 	&-menu
@@ -143,14 +196,18 @@ header
 			padding: 0 30px
 		@media (max-width: 490px)
 			padding: 0 20px
-		@media (max-width: 320px)
-			padding: 0 10px
 	&-button
 		color: $white
 		font-weight: 600
+		border: 2px solid $white
+		@media (max-width: 490px)
+			font-weight: 400
+			border: 1px solid $white
 	&-button:hover
 		background: $white
 		color: $deepblue
+		transform: scale(0.98)
+		transition-duration: 0.1s
 .burger
 	display: none
 	width: 49px
@@ -164,9 +221,10 @@ header
 	@media (max-width: 1040px)
 		order: 3
 		display: block
-	@media (max-width: 380px)
-		width: 50px
-		height: 32px
+	@media (max-width: 490px)
+		background: url("../assets/icon/burger-mb.svg")
+		width: 39px
+		height: 39px
 .burger:hover
 	cursor: pointer
 .close
@@ -182,6 +240,10 @@ header
 		position: absolute
 		right: 20px
 		border: none
+	@media (max-width: 490px)
+		background: url("../assets/icon/close-mb.svg")
+		width: 28px
+		height: 28px
 .close:hover
 	cursor: pointer
 .navigation__header
@@ -197,6 +259,8 @@ header
 		transform: translateX(100vw)
 		transition: all 0.6s ease
 		padding: 30px
+		@media (max-width: 744px)
+			top: 80px
 .navigation__header.show
 	transform: translateX(0vw)
 	transition: all 0.6s ease
@@ -225,3 +289,125 @@ header
 .header__block-underlist:hover
 	a
 		color: $white
+#home__main
+	background: url("../assets/bg/bg-main.png")
+	background-size: cover
+	background-repeat: no-repeat
+	position: relative
+	display: flex
+	flex-direction: row
+	width: 100vw	
+	margin-bottom: 120px
+	@media (max-width: 490px)
+		background: url("../assets/bg/bg-main-mb.png")
+.home__main
+	width: 1440px
+	padding: 0 110px
+	display: flex
+	justify-content: space-between
+	align-items: center
+	@media (max-width: 1440px)
+		width: 100vw
+		padding: 0 60px
+	@media (max-width: 1240px)
+		padding: 0 30px
+	@media (max-width: 490px)
+		padding: 0 20px
+	&-title
+		display: flex
+		flex-direction: column
+		color: $deepblue
+		gap: 30px
+		max-width: 550px
+		@media (max-width: 1040px)
+			margin-top: 30px
+			gap: 16px
+		@media (max-width: 744px)
+			margin-top: 10px
+			min-width: 250px
+			gap: 14px
+		@media (max-width: 490px)
+			margin-top: 30px
+		h3
+			max-width: 500px
+	&-btn 
+		display: flex
+		gap: 20px
+		padding: 20px 0
+		@media (max-width: 390px)
+			padding: 10px 0
+	img
+		position: relative
+		right: -200px
+		@media (max-width: 1440px)
+			right: -60px
+			height: 46vw
+		@media (max-width: 1240px)
+			right: -30px
+			height: 44vw
+		@media (max-width: 1040px)
+			height: 44vw
+		@media (max-width: 744px)
+			height: 70vw
+			right: 20px
+		@media (max-width: 490px)
+			height: 70vw
+			right: 20px
+			top: -8px
+		@media (max-width: 390px)
+			display: none
+.main-btn
+	background: $deepblue
+	color: $white
+	padding: 14px 20px
+	@media (max-width: 1240px)
+		padding: 14px 16px
+	@media (max-width: 490px)
+		padding: 12px 14px
+.question-btn
+	border: 2px solid $deepblue
+	color: $deepblue
+	font-weight: 600
+	@media (max-width: 744px)
+		display: none
+.home__industry
+	display: flex
+	flex-direction: column
+	gap: 20px
+	width: 1440px
+	padding: 0 110px
+	@media (max-width: 1440px)
+		width: 100vw
+		padding: 0 60px
+	@media (max-width: 1240px)
+		padding: 0 30px
+	@media (max-width: 490px)
+		padding: 0 20px
+	&-subtitle
+		max-width: 820px
+		font-weight: 400
+		line-height: normal
+	&-grid
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		margin-top: 40px
+		row-gap: 50px
+		padding-bottom: 50px
+	&-card
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: space-evenly
+		text-align: center
+		width: 350px
+		height: 300px
+		background: url("../assets/bg/industry-card.png")
+		background-size: cover
+		background-repeat: no-repeat
+		border-radius: 15px
+		box-shadow: 4px 4px 10px 0px rgba(0, 123, 194, 0.15), -4px -4px 10px 0px rgba(0, 123, 194, 0.15)
+		p
+			color: $deepblue
+			font-weight: 600
+			font-size: 18px
