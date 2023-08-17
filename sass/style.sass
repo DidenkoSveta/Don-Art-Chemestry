@@ -854,8 +854,8 @@ header
 			justify-content: center
 			flex-wrap: wrap
 		@media (max-width: 744px)
-			justify-content: space-evenly	
-	&-card 
+			justify-content: space-evenly
+	&-card
 		display: flex
 		flex-direction: column
 		justify-content: space-between
@@ -897,7 +897,7 @@ header
 		font-weight: 600
 		@media (max-width: 744px)
 			display: none
-	&-text 
+	&-text
 		display: flex
 		justify-content: space-between
 		align-items: center
@@ -965,32 +965,36 @@ header
 	@media (max-width: 490px)
 		padding: 0 20px
 		gap: 16px
+	&-block 
+		display: flex
+		align-items: center
+		justify-content: space-between
 	&-grid
 		display: flex
 		align-items: center
 		justify-content: space-between
-	&-grid::before
-		cursor: pointer
-		content: ' '
-		background: url("../assets/icon/arrow.svg")
-		display: block
-		height: 40px
-		width: 20px
-		background-size: cover
-		background-repeat: no-repeat
-		margin: 0 10px
-	&-grid::after
-		cursor: pointer
-		transform: rotate(0.5turn)
-		content: ' '
-		background: url("../assets/icon/arrow.svg")
-		display: block
-		height: 40px
-		width: 20px
-		background-size: cover
-		background-repeat: no-repeat
-		margin: 0 10px
-	&-card 
+	// &-grid::before
+	// 	cursor: pointer
+	// 	content: ' '
+	// 	background: url("../assets/icon/arrow.svg")
+	// 	display: block
+	// 	height: 40px
+	// 	width: 20px
+	// 	background-size: cover
+	// 	background-repeat: no-repeat
+	// 	margin: 0 10px
+	// &-grid::after
+	// 	cursor: pointer
+	// 	transform: rotate(0.5turn)
+	// 	content: ' '
+	// 	background: url("../assets/icon/arrow.svg")
+	// 	display: block
+	// 	height: 40px
+	// 	width: 20px
+	// 	background-size: cover
+	// 	background-repeat: no-repeat
+	// 	margin: 0 10px
+	&-card
 		width: 200px
 		height: 90px
 		display: flex
@@ -1000,10 +1004,20 @@ header
 		background: $white
 		margin: 10px
 		box-shadow: 2px 2px 10px 0px rgba(0, 123, 194, 0.10), -2px -2px 10px 0px rgba(0, 123, 194, 0.10)
+#next-btn, #back-btn
+	cursor: pointer
+#next-btn
+	transform: rotate(0.5turn)
+#next-btn:hover
+	transform: scale(1.2) rotate(0.5turn)
+	transition-duration: 0.1s
+#back-btn:hover
+	transform: scale(1.2)
+	transition-duration: 0.1s
 #contact__form
 	width: 100vw
 	margin-bottom: 0px
-	background: url("../assets/img/contact-form-bg.png")	
+	background: url("../assets/img/contact-form-bg.png")
 .contact__form
 	display: flex
 	flex-direction: column
@@ -1052,7 +1066,7 @@ header
 		@media (max-width: 744px)
 			width: 90vw
 			height: 80vw
-			padding: 30px 
+			padding: 30px
 		@media (max-width: 600px)
 			height: 90vw
 		@media (max-width: 490px)
@@ -1168,9 +1182,12 @@ header
 	width: 100vw
 	background: $deepblue
 	color: $white
+	p
+		@media (max-width: 490px)
+			text-align: center
 	a
 		color: $white
-	a:hover 
+	a:hover
 		color: $blue
 .footer__block
 	display: flex
@@ -1182,14 +1199,19 @@ header
 	margin: 0 auto
 	@media (max-width: 1440px)
 		width: 100vw
-		padding: 0 60px
+		padding: 50px 60px
 	@media (max-width: 1240px)
-		padding: 0 30px
+		padding: 50px 30px
 	@media (max-width: 744px)
 		gap: 10px
 	@media (max-width: 490px)
-		padding: 0 20px
+		padding: 40px 20px
 		gap: 16px
+	@media (max-width: 390px)
+		padding: 30px 20px
+		flex-direction: column
+		align-items: center
+		gap: 30px
 	&-copyright
 		display: flex
 		justify-content: space-between
@@ -1201,24 +1223,47 @@ header
 			padding: 25px 60px
 		@media (max-width: 1240px)
 			padding: 25px 30px
+		@media (max-width: 1040px)
+			flex-direction: column
+			align-content: center
+			align-items: center
+			gap: 16px
+			padding: 30px 30px
 		@media (max-width: 490px)
 			padding: 25px 20px
+			gap: 12px
+		@media (max-width: 390px)
+			font-size: 12px
 	&-row
 		display: flex
 		flex-direction: column
 		align-items: flex-start
 		gap: 30px
+		@media (max-width: 490px)
+			gap: 20px
+		@media (max-width: 390px)
+			align-items: center
 		ul
 			flex-direction: column
 			display: flex
 			gap: 14px
 			font-weight: 600
+			@media (max-width: 490px)
+				gap: 10px
+			@media (max-width: 390px)
+				align-items: center
 			li
 				a:hover
 					color: $deepblue
 					cursor: pointer
-			li:hover 
+			li:hover
 				transform: scale(1.02)
+	&-row:nth-child(3)
+		@media (max-width: 1040px)
+			display: none
+	&-row:nth-child(4)
+		@media (max-width: 744px)
+			display: none
 	&-text
 		text-transform: uppercase
 		font-weight: 600
@@ -1229,14 +1274,25 @@ header
 	&-contacts
 		display: flex
 		gap: 25px
-		a:hover 
+		@media (max-width: 490px)
+			gap: 20px
+		a:hover
 			transform: scale(1.08)
-			transition-duration: 0.1s	
+			transition-duration: 0.1s
+		a
+			img
+				@media (max-width: 744px)
+					height: 34px
 	&-logo:hover
 		transform: scale(1.02)
-		transition-duration: 0.1s		
+		transition-duration: 0.1s
 #footer-logo
 	align-items: center
+	img
+		@media (max-width: 1040px)
+			height: 100px
+		@media (max-width: 490px)
+			height: 90px
 #toTop
 	position: fixed
 	display: inline-block
@@ -1253,11 +1309,15 @@ header
 		width: 50px
 		height: 50px
 		bottom: 40px
+	@media (max-width: 1240px)
+		bottom: 50px
 	@media (max-width: 740px)
 		height: 30px
 		width: 30px
 		right: -40px
 		bottom: 70px
+	@media (max-width: 490px)
+		bottom: 40px
 #toTop svg
 	position: relative
 	top: 12px
@@ -1270,5 +1330,18 @@ header
 	right: calc(10%)
 	@media (max-width: 1440px)
 		right: calc(1%)
+	@media (max-width: 1240px)
+		right: calc(0.5%)
+	@media (max-width: 1040px)
+		right: calc(1%)
 	@media (max-width: 740px)
 		right: calc(5%)
+	@media (max-width: 490px)
+		right: calc(7%)
+.footer-btn
+	border: 2px solid $deepblue
+	color: $deepblue
+	font-weight: 600
+	@media (max-width: 490px)
+		text-align: center
+		padding: 10px 10px
