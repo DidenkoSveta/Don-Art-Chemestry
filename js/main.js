@@ -1,22 +1,3 @@
-//animate components
-function onEntry(entry) {
-   entry.forEach(change => {
-     if (change.isIntersecting) {
-       change.target.classList.add('element-show');
-     }
-   });
- }
- 
- let options = {
-   threshold: [0.5]
- };
- let observer = new IntersectionObserver(onEntry, options);
- let elements = document.querySelectorAll('h2, h3, h5, .home__services-card, .home__about-text, .about-img, .home__quiz, .context__about-img, .home__privilege-card, .context__about-list, .context__steps-card, .context__additional-card, .seo__additional-card, .faq__block-card, .my__cases-link, .my__cases-grid a');
- 
- for (let elm of elements) {
-   observer.observe(elm);
- };
-
  //burger menu
  let menuOpenButton = document.querySelector('.burger');
  let menu = document.querySelector('.navigation__header');
@@ -34,6 +15,8 @@ function onEntry(entry) {
    }
  });
 
+
+ 
 //scroll up
 function scrollTo(to, duration = 700) {
    const
@@ -84,18 +67,6 @@ document.addEventListener('DOMContentLoaded', function () {
    }
 });
 
-//faq
-var acc = document.getElementsByClassName("accordion");
-var i;
 
-for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-            panel.style.display = "none";
-        } else {
-            panel.style.display = "block";
-        }
-    });
-}
+//slider our partners
+
