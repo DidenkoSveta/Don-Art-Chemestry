@@ -1543,3 +1543,142 @@ footer
 .contacts-input
 	@media (max-width: 1240px)
 		width: 100%!important
+
+
+
+	// about company page
+
+#page__title
+	width: 100vw
+	height: 160px
+	background: url("../assets/bg/page-title.png")
+	margin-bottom: 100px
+	@media (max-width: 1040px)
+		margin-bottom: 90px
+		height: 140px
+	@media (max-width: 740px)
+		height: 100px
+		margin-bottom: 60px
+	@media (max-width: 490px)
+		height: 80px
+		margin-bottom: 40px
+.page__title
+	display: flex
+	flex-direction: column
+	width: 1440px
+	padding: 0 110px
+	@media (max-width: 1440px)
+		width: 100vw
+		padding: 0 60px
+	@media (max-width: 1240px)
+		padding: 0 30px
+	@media (max-width: 490px)
+		padding: 0 20px
+	h1
+		@media (max-width: 1040px)
+			font-size: 28px
+		@media (max-width: 740px)
+			font-size: 22px
+		@media (max-width: 490px)
+			font-size: 20px
+.page__wrapper
+	display: flex
+	flex-direction: column
+	width: 1440px
+	padding: 0 110px
+	@media (max-width: 1440px)
+		width: 100vw
+		padding: 0 60px
+	@media (max-width: 1240px)
+		padding: 0 30px
+	@media (max-width: 490px)
+		padding: 0 20px
+	&-block 
+		display: flex
+		flex-direction: column
+		gap: 60px
+		@media (max-width: 1040px)
+			gap: 30px
+		@media (max-width: 740px)
+			gap: 20px
+		h3
+			color: $deepblue
+			font-size: 28px
+			max-width: 915px
+			font-weight: 500
+			@media (max-width: 1240px)
+				font-size: 20px
+				max-width: 660px
+			@media (max-width: 740px)
+				font-size: 16px
+	&-text 
+		max-width: 710px
+		display: flex
+		flex-direction: column
+		gap: 16px
+		line-height: normal
+		font-weight: 400
+		@media (max-width: 1240px)
+			gap: 14px
+		@media (max-width: 740px)
+			gap: 12px
+			max-width: 90vw
+		@media (max-width: 490px)
+			gap: 10px
+			max-width: 98vw
+	&-grid
+		display: flex
+		justify-content: space-between
+		align-items: center
+		gap: 40px
+		@media (max-width: 1040px)
+			display: flex
+			flex-direction: column
+			align-items: baseline
+		@media (max-width: 740px)	
+			align-items: center
+		@media (max-width: 490px)
+			gap: 30px
+
+		img
+			border-radius: 10px
+			@media (max-width: 1240px)
+				height: 410px
+			@media (max-width: 1040px)
+				height: 300px
+			@media (max-width: 740px)
+				height: 70vw
+			@media (max-width: 490px)
+				height: 80vw
+.page__odds
+	display: flex
+	flex-direction: column
+	width: 1440px
+	padding: 0 110px
+	gap: 80px
+	@media (max-width: 1440px)
+		width: 100vw
+		padding: 0 60px
+	@media (max-width: 1240px)
+		padding: 0 30px
+	@media (max-width: 490px)
+		padding: 0 20px
+	&-grid
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		gap: 50px
+	&-card 
+		display: flex
+		gap: 20px
+		width: 250px
+		flex-direction: column
+		align-items: flex-start
+		img
+			height: 88px
+			margin-bottom: 10px
+	&-title
+		color: $deepblue
+		font-weight: 500
+	&-subtitle
+		font-size: 14px
