@@ -3337,11 +3337,35 @@ footer {
 @media (max-width: 1240px) {
   .page__odds {
     padding: 0 30px;
+    gap: 70px;
+  }
+}
+@media (max-width: 744px) {
+  .page__odds {
+    gap: 50px;
   }
 }
 @media (max-width: 490px) {
   .page__odds {
     padding: 0 20px;
+  }
+}
+@media (max-width: 390px) {
+  .page__odds {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (max-width: 744px) {
+  .page__odds h2 {
+    text-align: left;
+  }
+}
+@media (max-width: 390px) {
+  .page__odds h2 {
+    text-align: center;
+    width: 80%;
   }
 }
 .page__odds-grid {
@@ -3354,6 +3378,24 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 50px;
+}
+@media (max-width: 1240px) {
+  .page__odds-grid {
+    gap: 40px;
+  }
+}
+@media (max-width: 1040px) {
+  .page__odds-grid {
+    gap: 26px;
+  }
+}
+@media (max-width: 390px) {
+  .page__odds-grid {
+    row-gap: 26px;
+    -webkit-column-gap: 12px;
+       -moz-column-gap: 12px;
+            column-gap: 12px;
+  }
 }
 .page__odds-card {
   display: -webkit-box;
@@ -3369,14 +3411,143 @@ footer {
       -ms-flex-align: start;
           align-items: flex-start;
 }
+@media (max-width: 1440px) {
+  .page__odds-card {
+    width: 20%;
+  }
+}
+@media (max-width: 1240px) {
+  .page__odds-card {
+    gap: 10px;
+  }
+}
+@media (max-width: 744px) {
+  .page__odds-card {
+    width: 45%;
+  }
+}
+@media (max-width: 390px) {
+  .page__odds-card {
+    width: 47%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 6px;
+  }
+}
 .page__odds-card img {
-  height: 88px;
+  height: 84px;
   margin-bottom: 10px;
+}
+@media (max-width: 1440px) {
+  .page__odds-card img {
+    height: 80px;
+  }
+}
+@media (max-width: 1240px) {
+  .page__odds-card img {
+    height: 68px;
+  }
+}
+@media (max-width: 1040px) {
+  .page__odds-card img {
+    height: 56px;
+  }
+}
+@media (max-width: 390px) {
+  .page__odds-card img {
+    height: 52px;
+    margin-bottom: 4px;
+  }
 }
 .page__odds-title {
   color: #007BC2;
   font-weight: 500;
 }
+@media (max-width: 390px) {
+  .page__odds-title {
+    text-align: center;
+    font-size: 12px;
+  }
+}
 .page__odds-subtitle {
   font-size: 14px;
+}
+@media (max-width: 1040px) {
+  .page__odds-subtitle {
+    font-size: 12px;
+  }
+}
+@media (max-width: 390px) {
+  .page__odds-subtitle {
+    text-align: center;
+    font-size: 11px;
+  }
+}
+
+.page__video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 1440px;
+  padding: 0 110px;
+  gap: 80px;
+}
+@media (max-width: 1440px) {
+  .page__video {
+    width: 100vw;
+    padding: 0 60px;
+  }
+}
+@media (max-width: 1240px) {
+  .page__video {
+    padding: 0 30px;
+    gap: 70px;
+  }
+}
+@media (max-width: 744px) {
+  .page__video {
+    gap: 50px;
+  }
+}
+@media (max-width: 490px) {
+  .page__video {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 390px) {
+  .page__video {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.page__video-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+.page__video-conainer {
+  max-width: 600px;
+}
+.page__video-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
 }
