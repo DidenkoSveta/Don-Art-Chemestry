@@ -614,6 +614,16 @@ header
 		margin-left: 84px
 		@media (max-width: 744px)
 			margin-left: 0px
+#home__triage
+	margin-bottom: 80px
+	@media (max-width: 1440px)
+		margin-bottom: 80px
+	@media (max-width: 1240px)
+		margin-bottom: 70px
+	@media (max-width: 744px)
+		margin-bottom: 60px
+	@media (max-width: 490px)
+		margin-bottom: 40px
 .home__triage
 	display: flex
 	flex-direction: column
@@ -626,6 +636,7 @@ header
 	@media (max-width: 1240px)
 		padding: 0 30px
 	@media (max-width: 744px)
+		align-items: center
 		gap: 10px
 	@media (max-width: 490px)
 		padding: 0 20px
@@ -1828,3 +1839,102 @@ footer
 			font-weight: normal
 			font-weight: 700
 			white-space: nowrap
+.product__block
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 1440px
+	padding: 0px 90px
+	gap: 80px
+	@media (max-width: 1440px)
+		width: 100vw
+		padding: 0 40px
+	@media (max-width: 1240px)
+		padding: 0 20px
+	@media (max-width: 490px)
+		padding: 0 20px
+	@media (max-width: 390px)
+		align-items: center
+	&-grid
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		@media (max-width: 1240px)
+			gap: 20px
+		@media (max-width: 1040px)
+			justify-content: space-around
+			gap: 12px
+	&-card
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		justify-content: center
+		gap: 24px
+		padding: 30px 20px
+		margin: 20px
+		width: 370px
+		height: 350px
+		border-radius: 15px
+		background: $white
+		box-shadow: 2px 2px 10px 0px rgba(0, 123, 194, 0.20), -2px -2px 8px 0px rgba(0, 123, 194, 0.20)
+		@media (max-width: 1440px)
+			width: 350px
+		@media (max-width: 1240px)
+			width: 30%
+			margin: 10px
+		@media (max-width: 1040px)
+			width: 46%
+		@media (max-width: 744px)
+			box-shadow: 1px 2px 5px 0px rgba(0, 123, 194, 0.20), -1px -2px 4px 0px rgba(0, 123, 194, 0.20)
+			padding: 20px 18px
+			gap: 18px
+			width: 46%
+			margin: 8px 0px
+			border-radius: 10px
+		@media (max-width: 490px)
+			width: 100%
+			height: 240px
+		@media (max-width: 340px)
+			height: 250px
+	&-about
+		display: flex
+		align-items: center
+		font-size: 14px
+		font-weight: 500
+		gap: 12px
+		@media (max-width: 744px)
+			flex-direction: column
+			gap: 10px
+		img
+			@media (max-width: 744px)
+				height: 120px
+			@media (max-width: 340px)
+				height: 100px
+		p
+			@media (max-width: 744px)
+				font-size: 12px
+		@media (max-width: 490px)
+			display: flex
+			flex-direction: row
+	&-title
+		display: flex
+		flex-direction: column
+		gap: 14px
+		@media (max-width: 744px)
+			gap: 12px
+		h5
+			font-size: 16px
+			color: $deepblue
+			font-weight: 700
+			line-height: 1em
+			@media (max-width: 1040px)
+				font-size: 14px
+			@media (max-width: 744px)
+				font-size: 13px
+		p
+			font-weight: 600
+			font-size: 14px
+			@media (max-width: 1040px)
+				font-size: 13px
+			@media (max-width: 744px)
+				font-size: 12px
