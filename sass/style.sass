@@ -1598,6 +1598,8 @@ footer
 			font-size: 22px
 		@media (max-width: 490px)
 			font-size: 20px
+		@media (max-width: 380px)
+			font-size: 18px
 .page__wrapper
 	display: flex
 	flex-direction: column
@@ -1938,3 +1940,65 @@ footer
 				font-size: 13px
 			@media (max-width: 744px)
 				font-size: 12px
+.quality-block
+	display: flex
+	flex-direction: column
+	justify-content: center
+	width: 1440px
+	padding: 50px 110px
+	gap: 30px
+	@media (max-width: 1440px)
+		width: 100vw
+		padding: 0 60px
+	@media (max-width: 1240px)
+		padding: 0 30px
+		gap: 20px
+	@media (max-width: 490px)
+		padding: 0 20px
+	@media (max-width: 390px)
+		align-items: center
+	&-grid
+		margin-top: 40px
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		gap: 60px
+		@media (max-width: 1240px)
+			gap: 50px
+			margin-top: 30px
+		@media (max-width: 1040px)
+			gap: 30px
+	&-card 
+		width: 310px
+		display: flex
+		justify-content: space-between
+		align-items: center
+		gap: 10px
+		@media (max-width: 1040px)
+			width: 30%
+		@media (max-width: 744px)
+			width: 45%
+		@media (max-width: 490px)
+			width: 40%
+			flex-direction: column
+		p
+			@media (max-width: 490px)
+				text-align: center
+		img
+			@media (max-width: 1040px)
+				height: 50px
+			@media (max-width: 490px)
+				height: 40px
+.page__company-title
+	text-align: left
+.page__company-block
+	@media (max-width: 1040px)
+		flex-direction: row
+		align-items: center
+	img
+		@media (max-width: 1040px)
+			height: 250px
+	@media (max-width: 800px)
+		display: flex
+		align-items: flex-start
+		flex-direction: column-reverse
