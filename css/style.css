@@ -617,6 +617,10 @@ header {
   color: #FFFFFF;
 }
 
+#header__block-price ul {
+  width: 250px;
+}
+
 #home__main {
   background: url("../assets/bg/bg-main.png");
   background-size: cover;
@@ -3135,25 +3139,25 @@ footer {
 
 #page__title {
   width: 100vw;
-  height: 160px;
+  padding: 50px 0;
   background: url("../assets/bg/page-title.png");
   margin-bottom: 100px;
 }
 @media (max-width: 1040px) {
   #page__title {
     margin-bottom: 90px;
-    height: 140px;
+    padding: 40px 0;
   }
 }
 @media (max-width: 740px) {
   #page__title {
-    height: 100px;
+    padding: 40px 0;
     margin-bottom: 60px;
   }
 }
 @media (max-width: 490px) {
   #page__title {
-    height: 80px;
+    padding: 30px 0;
     margin-bottom: 40px;
   }
 }
@@ -3747,15 +3751,19 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 1440px;
   padding: 0px 90px;
-  gap: 80px;
+  gap: 60px;
 }
 @media (max-width: 1440px) {
   .product__block {
@@ -3766,6 +3774,12 @@ footer {
 @media (max-width: 1240px) {
   .product__block {
     padding: 0 20px;
+    gap: 40px;
+  }
+}
+@media (max-width: 744px) {
+  .product__block {
+    gap: 30px;
   }
 }
 @media (max-width: 490px) {
@@ -3779,6 +3793,9 @@ footer {
         -ms-flex-align: center;
             align-items: center;
   }
+}
+.product__block h2 {
+  margin-left: 20px;
 }
 .product__block-grid {
   display: -webkit-box;
@@ -3851,6 +3868,11 @@ footer {
     width: 46%;
     margin: 8px 0px;
     border-radius: 10px;
+  }
+}
+@media (max-width: 540px) {
+  .product__block-card {
+    width: 80%;
   }
 }
 @media (max-width: 490px) {
@@ -4099,4 +4121,143 @@ footer {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
+}
+
+.single-title h1 {
+  font-size: 28px;
+  width: 60%;
+}
+@media (max-width: 1240px) {
+  .single-title h1 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 1040px) {
+  .single-title h1 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 744px) {
+  .single-title h1 {
+    font-size: 18px;
+    width: 80%;
+  }
+}
+@media (max-width: 490px) {
+  .single-title h1 {
+    font-size: 16px;
+    width: 100%;
+  }
+}
+
+#page__not-found {
+  margin: 40px 0;
+}
+
+.page__not-found {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+  width: 1440px;
+  padding: 30px 110px 100px;
+}
+@media (max-width: 1440px) {
+  .page__not-found {
+    width: 100vw;
+    padding: 30px 0 60px;
+  }
+}
+@media (max-width: 1240px) {
+  .page__not-found {
+    padding: 20px 0 50px;
+  }
+}
+@media (max-width: 1040px) {
+  .page__not-found {
+    gap: 30px;
+    padding: 10px 0 40px;
+  }
+}
+@media (max-width: 490px) {
+  .page__not-found {
+    padding: 10px 0 30px;
+  }
+}
+.page__not-found h1 {
+  color: #007BC2;
+}
+@media (max-width: 1040px) {
+  .page__not-found img {
+    width: 500px;
+  }
+}
+@media (max-width: 744px) {
+  .page__not-found img {
+    width: 80%;
+  }
+}
+@media (max-width: 490px) {
+  .page__not-found img {
+    width: 90%;
+  }
+}
+
+.privacy__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 1240px;
+  padding: 50px 110px;
+  gap: 14px;
+}
+@media (max-width: 1440px) {
+  .privacy__block {
+    width: 100vw;
+    padding: 0 60px;
+  }
+}
+@media (max-width: 1240px) {
+  .privacy__block {
+    padding: 0 30px;
+    gap: 14px;
+  }
+}
+@media (max-width: 490px) {
+  .privacy__block {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 390px) {
+  .privacy__block {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 12px;
+  }
+}
+.privacy__block-subtitle {
+  margin-top: 0px !important;
+}
+.privacy__block h1 {
+  margin: 50px 0 0;
+  font-size: 30px;
+}
+.privacy__block h2 {
+  font-size: 20px;
+  margin: 20px 0 10px;
 }

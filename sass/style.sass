@@ -326,6 +326,9 @@ header
 .header__block-underlist:hover
 	a
 		color: $white
+#header__block-price
+	ul
+		width: 250px
 #home__main
 	background: url("../assets/bg/bg-main.png")
 	background-size: cover
@@ -1567,17 +1570,17 @@ footer
 
 #page__title
 	width: 100vw
-	height: 160px
+	padding: 50px 0
 	background: url("../assets/bg/page-title.png")
 	margin-bottom: 100px
 	@media (max-width: 1040px)
 		margin-bottom: 90px
-		height: 140px
+		padding: 40px 0
 	@media (max-width: 740px)
-		height: 100px
+		padding: 40px 0
 		margin-bottom: 60px
 	@media (max-width: 490px)
-		height: 80px
+		padding: 30px 0
 		margin-bottom: 40px
 .page__title
 	display: flex
@@ -1843,20 +1846,26 @@ footer
 			white-space: nowrap
 .product__block
 	display: flex
+	align-items: flex-start
+	flex-direction: column
 	justify-content: center
-	align-items: center
 	width: 1440px
 	padding: 0px 90px
-	gap: 80px
+	gap: 60px
 	@media (max-width: 1440px)
 		width: 100vw
 		padding: 0 40px
 	@media (max-width: 1240px)
 		padding: 0 20px
+		gap: 40px
+	@media (max-width: 744px)
+		gap: 30px
 	@media (max-width: 490px)
 		padding: 0 20px
 	@media (max-width: 390px)
 		align-items: center
+	h2
+		margin-left: 20px
 	&-grid
 		display: flex
 		flex-wrap: wrap
@@ -1893,6 +1902,8 @@ footer
 			width: 46%
 			margin: 8px 0px
 			border-radius: 10px
+		@media (max-width: 540px)
+			width: 80%
 		@media (max-width: 490px)
 			width: 100%
 			height: 240px
@@ -2002,3 +2013,71 @@ footer
 		display: flex
 		align-items: flex-start
 		flex-direction: column-reverse
+.single-title
+	h1
+		font-size: 28px
+		width: 60%
+		@media (max-width: 1240px)
+			font-size: 24px
+		@media (max-width: 1040px)
+			font-size: 20px
+		@media (max-width: 744px)
+			font-size: 18px
+			width: 80%
+		@media (max-width: 490px)
+			font-size: 16px
+			width: 100%
+#page__not-found
+	margin: 40px 0
+.page__not-found
+	display: flex
+	flex-direction: column
+	align-items: center
+	gap: 40px
+	width: 1440px
+	padding: 30px 110px 100px
+	@media (max-width: 1440px)
+		width: 100vw
+		padding: 30px 0 60px
+	@media (max-width: 1240px)
+		padding: 20px 0 50px
+	@media (max-width: 1040px)
+		gap: 30px
+		padding: 10px 0 40px
+	@media (max-width: 490px)
+		padding: 10px 0 30px
+	h1
+		color: $deepblue
+	img
+		@media (max-width: 1040px)
+			width: 500px
+		@media (max-width: 744px)
+			width: 80%
+		@media (max-width: 490px)
+			width: 90%
+.privacy__block
+	display: flex
+	flex-direction: column
+	justify-content: center
+	width: 1240px
+	padding: 50px 110px
+	gap: 14px
+	@media (max-width: 1440px)
+		width: 100vw
+		padding: 0 60px
+	@media (max-width: 1240px)
+		padding: 0 30px
+		gap: 14px
+	@media (max-width: 490px)
+		padding: 0 20px
+	@media (max-width: 390px)
+		align-items: center
+		gap: 12px
+	&-subtitle
+		margin-top: 0px!important
+	h1
+		margin: 50px 0 0
+		font-size: 30px
+	h2
+		font-size: 20px
+		margin: 20px 0 10px
