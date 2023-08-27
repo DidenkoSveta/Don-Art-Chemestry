@@ -327,6 +327,7 @@ header
 	a
 		color: $white
 #header__block-price
+	cursor: pointer
 	ul
 		width: 250px
 #home__main
@@ -1979,7 +1980,7 @@ footer
 			margin-top: 30px
 		@media (max-width: 1040px)
 			gap: 30px
-	&-card 
+	&-card
 		width: 310px
 		display: flex
 		justify-content: space-between
@@ -2081,3 +2082,57 @@ footer
 	h2
 		font-size: 20px
 		margin: 20px 0 10px
+.product__donacid
+	display: flex
+	flex-direction: column
+	width: 1440px
+	padding: 50px 110px
+	gap: 30px
+	@media (max-width: 1440px)
+		width: 100vw
+		padding: 0 60px
+	@media (max-width: 1240px)
+		padding: 0 30px
+		gap: 20px
+	@media (max-width: 490px)
+		padding: 0 20px
+	@media (max-width: 390px)
+		align-items: center
+	ul
+		margin-left: 26px
+		display: flex
+		flex-direction: column
+		gap: 1em
+		li
+			list-style-type: circle
+table
+	margin-top: 60px
+	border-collapse: collapse
+thead
+	background: rgba(117, 197, 240, 0.20)
+	font-weight: 500
+	tr
+		td:nth-child(n+3)
+			padding: 35px 9px
+tbody, thead
+	border: 1px solid $blue
+	padding: 10px
+tbody
+	tr
+		height: 92px
+tr, td
+	border-left: 1px solid $blue
+	// padding: 10px 20px 
+td:nth-child(1)
+	width: 320px
+	padding: 10px 30px 
+td:nth-child(2)
+	font-size: 14px
+	text-align: center
+td:nth-child(n+3)
+	text-align: center!important
+	font-size: 14px
+	padding: 0px
+.td-text
+	text-align: left!important
+	padding: 10px 30px 
