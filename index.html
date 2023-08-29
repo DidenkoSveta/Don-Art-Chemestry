@@ -47,8 +47,15 @@
                         </li>
                      </ul>
                   </li>
-                  <li><a class="header__block-list link" href="product.html">Продукция</a></li>
-                  <li><a class="header__block-list link" href="laboratory.html">Оснащение лабораторий</a></li>
+                  <li class="header__block-taplink" id="header__block-product">Продукция
+                     <ul class="header__block-underlists">
+                        <li class="header__block-underlist"><a href="catalog.html">Каталог</a></li>
+                        <li class="header__block-underlist"><a href="product-donacid.html">Моющие средства ДонАцид</a></li>
+                        <li class="header__block-underlist"><a href="product-eco.html">Моющие средства ЭКО</a></li>
+                        <li class="header__block-underlist"><a href="technical-chemistry.html">Техническая химия</a></li>
+                        <li class="header__block-underlist"><a href="laboratory.html">Оснащение лабораторий</a></li>
+                     </ul>
+                  </li>
                   <li class="header__block-taplink" id="header__block-price">Прайс-лист
                      <ul class="header__block-underlists">
                         <li class="header__block-underlist"><a href="price-donacid.html">Средства ДонАцид</a></li>
@@ -75,7 +82,8 @@
                   <a href="#" class="link-btn question-btn">Задать вопрос</a>
                </div>
             </div>
-            <img src="assets/img/main-screen.png" alt="">
+            <img class="home__main-imgbig"src="assets/img/main-screen-big.png" alt="">
+            <img class="home__main-img" src="assets/img/main-screen.png" alt="">
          </div>
       </section>
       <section>
@@ -185,54 +193,60 @@
                промышленности, а также для профессионального клининга и домашней уборки. У нас вы найдете кислотные,
                щелочные, пенные, дезинфицирующие и экологически безопасные средства – все в одном месте!</p>
             <div class="home__triage-grid">
-               <div class="home__triage-card">
+               <a class="home__triage-card sorting-button" data-category="all">
+                  <div class="home__triage-circle">
+                     <img src="assets/svg/triage/triage-09.svg" alt="Все категории">
+                  </div>
+                  <p>Смотреть все</p>
+               </a>
+               <a class="home__triage-card sorting-button" data-category="category1">
                   <div class="home__triage-circle">
                      <img src="assets/svg/triage/triage-01.svg" alt="Кислотные средства">
                   </div>
                   <p>Кислотные</p>
-               </div>
-               <div class="home__triage-card">
+               </a>
+               <button class="home__triage-card sorting-button" data-category="category2">
                   <div class="home__triage-circle">
                      <img src="assets/svg/triage/triage-02.svg" alt="Щелочные средства">
                   </div>
                   <p>Щелочные</p>
-               </div>
-               <div class="home__triage-card">
+               </button>
+               <button class="home__triage-card sorting-button" data-category="category3">
                   <div class="home__triage-circle">
                      <img src="assets/svg/triage/triage-03.svg" alt="Пенные средства">
                   </div>
                   <p>Пенные</p>
-               </div>
-               <div class="home__triage-card">
+               </button>
+               <button class="home__triage-card sorting-button" data-category="category4">
                   <div class="home__triage-circle">
                      <img src="assets/svg/triage/triage-04.svg" alt="Беспенные средства">
                   </div>
                   <p>Беспенные</p>
-               </div>
-               <div class="home__triage-card">
+               </button>
+               <button class="home__triage-card sorting-button" data-category="category5">
                   <div class="home__triage-circle">
                      <img src="assets/svg/triage/triage-05.svg" alt="Антисептики">
                   </div>
                   <p>Антисептики</p>
-               </div>
-               <div class="home__triage-card">
+               </button>
+               <button class="home__triage-card sorting-button" data-category="category6">
                   <div class="home__triage-circle">
                      <img src="assets/svg/triage/triage-06.svg" alt="Для клининга средства">
                   </div>
                   <p>Для клининга</p>
-               </div>
-               <div class="home__triage-card">
+               </button>
+               <button class="home__triage-card sorting-button" data-category="category7">
                   <div class="home__triage-circle">
                      <img src="assets/svg/triage/triage-07.svg" alt="Эко-средства">
                   </div>
                   <p>Эко-средства</p>
-               </div>
-               <div class="home__triage-card">
+               </button>
+               <button class="home__triage-card sorting-button" data-category="category8">
                   <div class="home__triage-circle">
                      <img src="assets/svg/triage/triage-08.svg" alt="Бытовая химия">
                   </div>
                   <p>Бытовая химия</p>
-               </div>
+               </button>
             </div>
          </div>
       </section>
@@ -303,8 +317,8 @@
          <div class="home__partners">
             <h2>Наши <span>парнеры</span></h2>
             <div class="home__partners-block">         
-               <img id="back-btn" src="assets/icon/arrow.svg" alt="back">
-               <img id="next-btn" src="assets/icon/arrow.svg" alt="next">
+               <button type="button"  id="back-btn" ><img src="assets/icon/arrow.svg" alt="back"></button>
+               <button type="button"  id="next-btn"><img src="assets/icon/arrow.svg" alt="next"></button> 
                <div class="home__partners-grid">
                   <div class="home__partners-card">
                      <img src="assets/img/partners/partners-01.png" alt="Партнеры">

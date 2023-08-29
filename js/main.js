@@ -70,3 +70,154 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //slider our partners
 
+document.addEventListener('DOMContentLoaded', function () {
+   const partnersGrid = document.querySelector('.home__partners-grid');
+   const backButton = document.querySelector('#back-btn');
+   const nextButton = document.querySelector('#next-btn');
+   const cardWidth = 416; // Assuming each card 
+   const carouselWidth = 2080; // Total width of the carousel
+   let currentPosition = 0;
+   let autoScrollInterval;
+ 
+   function moveLeft() {
+     currentPosition -= cardWidth;
+     if (currentPosition < -carouselWidth) {
+       currentPosition = 0;
+       updateCarouselPosition(false); // Update without animation
+     } else {
+       updateCarouselPosition(true); // Update with animation
+     }
+   }
+ 
+   function moveRight() {
+     currentPosition += cardWidth;
+     if (currentPosition > 0) {
+       currentPosition = -carouselWidth + cardWidth;
+       updateCarouselPosition(false); // Update without animation
+     } else {
+       updateCarouselPosition(true); // Update with animation
+     }
+   }
+ 
+   function updateCarouselPosition(withAnimation) {
+     if (withAnimation) {
+       partnersGrid.style.transition = 'transform 0.3s ease-in-out';
+     } else {
+       partnersGrid.style.transition = 'none';
+     }
+     partnersGrid.style.transform = `translateX(${currentPosition}px)`;
+   }
+ 
+   function startAutoScroll() {
+     autoScrollInterval = setInterval(moveRight, 2000); // Auto-scroll every 2 seconds
+   }
+ 
+   function stopAutoScroll() {
+     clearInterval(autoScrollInterval);
+   }
+ 
+   backButton.addEventListener('click', function () {
+     moveLeft();
+     stopAutoScroll();
+   });
+ 
+   nextButton.addEventListener('click', function () {
+     moveRight();
+     stopAutoScroll();
+   });
+ 
+   // Start auto-scrolling when the page loads
+   startAutoScroll();
+ 
+   // Pause auto-scrolling when the mouse is over the carousel
+   partnersGrid.addEventListener('mouseover', stopAutoScroll);
+ 
+   // Resume auto-scrolling when the mouse leaves the carousel
+   partnersGrid.addEventListener('mouseout', startAutoScroll);
+ });
+ 
+
+ /// Sorting categories
+
+ document.addEventListener("DOMContentLoaded", function () {
+   const sortingButtons = document.querySelectorAll(".sorting-button");
+   const triageButtons = document.querySelectorAll(".home__triage-card");
+   const productCards = document.querySelectorAll(".product__block-card");
+
+   function filterProducts(category) {
+      productCards.forEach((card) => {
+         const cardCategory = card.getAttribute("data-category");
+         if (category === "all" || cardCategory.includes(category)) {
+            card.style.display = "flex";
+         } else {
+            card.style.display = "none";
+         }
+      });
+   }
+
+   // Автоматически кликаем на кнопку соответствующей категории
+   const urlParams = new URLSearchParams(window.location.search);
+   const initialCategory = urlParams.get("category");
+   if (initialCategory) {
+      filterProducts(initialCategory);
+
+      triageButtons.forEach((button) => {
+         if (button.getAttribute("data-category") === initialCategory) {
+            button.classList.add("active");
+         } else {
+            button.classList.remove("active");
+         }
+      });
+   }
+
+   // Добавляем обработчики событий для кнопок сортировки
+   sortingButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+         const category = button.getAttribute("data-category");
+         filterProducts(category);
+
+         sortingButtons.forEach((btn) => {
+            if (btn === button) {
+               btn.classList.add("active");
+            } else {
+               btn.classList.remove("active");
+            }
+         });
+
+         triageButtons.forEach((triageButton) => {
+            if (triageButton.getAttribute("data-category") === category) {
+               triageButton.classList.add("active");
+            } else {
+               triageButton.classList.remove("active");
+            }
+         });
+      });
+   });
+
+   // Добавляем обработчики событий для кнопок фильтрации
+   triageButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+         const category = button.getAttribute("data-category");
+         filterProducts(category);
+
+         triageButtons.forEach((btn) => {
+            if (btn === button) {
+               btn.classList.add("active");
+            } else {
+               btn.classList.remove("active");
+            }
+         });
+
+         sortingButtons.forEach((sortingButton) => {
+            if (sortingButton.getAttribute("data-category") === category) {
+               sortingButton.classList.add("active");
+            } else {
+               sortingButton.classList.remove("active");
+            }
+         });
+      });
+   });
+});
+
+
+ 
