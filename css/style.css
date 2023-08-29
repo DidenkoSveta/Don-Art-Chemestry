@@ -2182,7 +2182,7 @@ header {
 #contact__form, #contacts__block-container {
   width: 100vw;
   margin-bottom: 0px;
-  background: url("../assets/img/contact-form-bg.png");
+  background: url("../assets/bg/contact-form-bg.png");
 }
 
 .contact__form {
@@ -2974,8 +2974,8 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 48px;
-  height: 48px;
+  width: 46px;
+  height: 46px;
   background: #FFFFFF;
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
@@ -2997,7 +2997,7 @@ footer {
 .contacts__wrapper-icon img {
   z-index: 2;
   position: absolute;
-  width: 25px;
+  width: 24px;
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
@@ -3039,8 +3039,9 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 24px;
+  gap: 20px;
   height: 72px;
+  width: 100%;
 }
 @media (max-width: 1240px) {
   .contacts__wrapper-card {
@@ -3067,7 +3068,7 @@ footer {
           justify-content: space-between !important;
   width: 1260px;
   padding: 20px 80px;
-  background: url("../assets/img/contact-form-bg.png");
+  background: url("../assets/bg/contact-form-bg.png");
   border-radius: 20px;
   -webkit-box-shadow: 2px 2px 6px 0px rgba(0, 123, 194, 0.25), -2px -2px 6px 0px rgba(0, 123, 194, 0.25);
           box-shadow: 2px 2px 6px 0px rgba(0, 123, 194, 0.25), -2px -2px 6px 0px rgba(0, 123, 194, 0.25);
