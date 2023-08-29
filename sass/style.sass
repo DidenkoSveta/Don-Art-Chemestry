@@ -515,6 +515,7 @@ header
 				max-width: 60vw
 	&-card:hover
 		@media (min-width: 1040px)
+			transition: transform 0.3s ease-in-out
 			transform: scale(1.05)
 			img
 				transform: scale(1.2)
@@ -945,7 +946,7 @@ header
 		@media (max-width: 390px)
 			padding: 20px 10px
 	&-card:hover
-		box-shadow: 6px 6px 20px 0px rgba(0, 123, 194, 0.40), -6px -6px 20px 0px rgba(45, 183, 243, 0.40)
+		box-shadow: 6px 6px 20px 0px rgba(0, 123, 194, 0.30), -6px -6px 20px 0px rgba(45, 183, 243, 0.30)
 	&-type
 		color: $white
 		font-weight: 600

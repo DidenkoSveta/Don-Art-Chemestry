@@ -984,6 +984,10 @@ header {
 }
 @media (min-width: 1040px) {
   .home__industry-card:hover {
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
     -webkit-transform: scale(1.05);
         -ms-transform: scale(1.05);
             transform: scale(1.05);
@@ -1857,8 +1861,8 @@ header {
   }
 }
 .home__download-card:hover {
-  -webkit-box-shadow: 6px 6px 20px 0px rgba(0, 123, 194, 0.4), -6px -6px 20px 0px rgba(45, 183, 243, 0.4);
-          box-shadow: 6px 6px 20px 0px rgba(0, 123, 194, 0.4), -6px -6px 20px 0px rgba(45, 183, 243, 0.4);
+  -webkit-box-shadow: 6px 6px 20px 0px rgba(0, 123, 194, 0.3), -6px -6px 20px 0px rgba(45, 183, 243, 0.3);
+          box-shadow: 6px 6px 20px 0px rgba(0, 123, 194, 0.3), -6px -6px 20px 0px rgba(45, 183, 243, 0.3);
 }
 .home__download-type {
   color: #FFFFFF;
